@@ -1,5 +1,5 @@
 .home__content {
-    grid-template-columns: 116px repeat(2, 1fr);
+    grid-template-columns: 120px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
@@ -16,6 +16,7 @@
     justify-self: center;
     height: 300px;
     border-radius: 50%;
+    box-shadow: 2px 2px rgb(156, 154, 154);
 }
 
 .home__social {

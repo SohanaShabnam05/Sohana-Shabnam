@@ -61,6 +61,8 @@ button {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 10%;
+  box-shadow: 4px 4px grey;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
