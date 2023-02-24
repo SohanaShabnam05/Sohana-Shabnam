@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
-import 'boxicons';
+
 
 function Header() {
+  // Toggle menu
+  const[Toggle, setToggle] = useState(false);
   return (
     <div>
       <header className="header">
         <nav className="nav container">
           <a href="index.html" className="nav__logo">Sohana</a>
 
-          <div className="nav__menu">
+          <div className={Toggle ? "nav__menu set-Toggle" : "nav__menu"}>
             <ul className="nav__list grid">
 
               <li className="nav__item">
@@ -59,15 +61,16 @@ function Header() {
                 </a>
               </li>
             </ul>
-
-            <i className="uil uil-times nav__close"> </i>
+          
+            <i className="uil uil-times nav__close"  onClick={() => setToggle(!Toggle)}> </i>
+          
             </div>
-              <div className="nav__toggle">
+              <div className="nav__toggle" onClick={() => setToggle(!Toggle)}>
                 <i className="uil uil-apps">
 
                 </i>
               </div>
-           
+            
          
         </nav>
       </header>
