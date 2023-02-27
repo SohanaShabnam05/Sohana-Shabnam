@@ -21,21 +21,21 @@ const Footer = () => {
             </ul>
 
             <div className="footer__social">
-            <a href="https://www.instagram.com/dews_on_the_grass/" className="home__social-icon" target="_blank">
+            <a href="https://www.instagram.com/dews_on_the_grass/" className="home__social-icon" >
         <i className="uil uil-instagram"></i>
       </a>
       
-      <a href="https://www.linkedin.com/in/sohana-shabnam-383742229/" className="home__social-icon" target="_blank">
+      <a href="https://www.linkedin.com/in/sohana-shabnam-383742229/" className="home__social-icon">
       <i class="uil uil-linkedin"></i>
 
       </a>
 
-      <a href="https://github.com/SohanaShabnam05" className="home__social-icon" target="_blank">
+      <a href="https://github.com/SohanaShabnam05" className="home__social-icon">
         <i className="uil uil-github-alt">
 
         </i>
       </a>
-      <a href="https://twitter.com/shabnam_sohana" className="home__social-icon" target="_blank">
+      <a href="https://twitter.com/shabnam_sohana" className="home__social-icon">
         <i className="uil uil-twitter">
 
         </i>

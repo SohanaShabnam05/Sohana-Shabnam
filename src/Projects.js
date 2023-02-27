@@ -21,7 +21,7 @@ const Projects = () => {
           <p class="project-details">
           Front-end application that allows users to order food from a restaurant. Built using React.js .
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://ornate-custard-b59714.netlify.app/" class="project-link">Check it Out</a>
         </div>
         <div class="project-container project-card">
           <img
@@ -34,7 +34,8 @@ const Projects = () => {
           <p class="project-details">
           Class base component have used and CURD operation has implementd .
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+    
+          <a href="https://contact-managing-app.netlify.app/" class="project-link">Check it Out</a>
         </div>
         <div class="project-container project-card">
           <img
@@ -48,7 +49,7 @@ const Projects = () => {
         My first full Stack Project and I have used React.js and Firebase.
             
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://challenge-2adce.web.app/" class="project-link">Check it Out</a>
         </div>
       </div>
     </section>
