@@ -4,6 +4,8 @@ import Header from './Header';
 import Home from './Home';
 import About from './About';
 import Skill from './Skill';
+import Projects from './Projects';
+import Testimonials from './Testimonials';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Home />
         <About />
         <Skill />
+        <Projects />
+        <Testimonials />
       </main>
 
     </div>
