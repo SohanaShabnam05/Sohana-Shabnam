@@ -1,52 +1,59 @@
-//import { CodeIcon } from "@heroicons/react/solid";
-import React from "react";
-import { projects } from "./project/repo.js";
+import React from 'react';
+import './Projects.css';
+import food from "./images/food.png";
+import contact from "./images/contact.png";
+import clone from "./images/clone.png";
 
-
- function Projects() {
-
+const Projects = () => {
   return (
-    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-        <div className="flex flex-col w-full mb-20">
-          {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Projects I've Built
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+    <div>
+      <section class="projects" id="projects">
+      <h2 class="section__title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src={food}
+            alt="Food-order-app"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">React Food Delivery App</h3>
+          <p class="project-details">
+          Front-end application that allows users to order food from a restaurant. Built using React.js .
           </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
-        <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
-            <a
-              href={project.link}
-              key={project.image}
-              className="sm:w-1/2 w-100 p-4">
-              <div className="flex relative">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 w-full h-full object-cover object-center"
-                  src={project.image}
-                />
-                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <h1 className="title-font text-lg font-medium text-white mb-3">
-                    {project.title}
-                  </h1>
-                  <p className="leading-relaxed">{project.description}</p>
-                </div>
-              </div>
-            </a>
-          ))}
+        <div class="project-container project-card">
+          <img
+            src={contact}
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+    <h3 class="project-title">Contact-Manger</h3>
+          <p class="project-details">
+          Class base component have used and CURD operation has implementd .
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src={clone}
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Amazon Clone</h3>
+          <p class="project-details">
+        My first full Stack Project and I have used React.js and Firebase.
+            
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
       </div>
     </section>
-  );
+    </div>
+  )
 }
 
 export default Projects

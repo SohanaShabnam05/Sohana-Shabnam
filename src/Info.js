@@ -16,7 +16,8 @@ const Info = () => {
         </div>
         <div className="about__box">
             <h3 className="about__title">
-                Projects
+               
+            <a href="#projects"> Projects</a>
             </h3>
                 <span className="about__subtitle">
 
