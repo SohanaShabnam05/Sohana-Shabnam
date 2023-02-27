@@ -1,9 +1,9 @@
 .footer {
    background-color: rgb(244, 246, 243);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-color: 1px black;
     justify-content: center;
-    border-radius: 5px
+    border-radius: 5px;
+    display: flex;
 }
 
 .footer__container {
@@ -65,14 +65,33 @@
         border-radius: 0.25rem;
         font-size: 1rem;
     }
+
+    .footer {
+        display: flex;
+    }
 }
 
-@media screen and (max-width : 350px)
+@media screen and (max-width: 576px) {
+    
+    .footer {
+        width: 100%;
+        background-color: white ;
+        display: flex;
+    }
+
+    .footer__container {
+        margin: 0;
+        padding: 0 0;
+    }
+
+}
+
+@media screen and (max-width : 370px)
 {
     .footer {
         width: 100%;
         background-color: white ;
-        margin-left: 20%;
+        display: flex;
     }
 
     .footer__container {
